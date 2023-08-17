@@ -1,5 +1,8 @@
 # Automated Feature Selection & Importance
 
+[![PyPI](https://img.shields.io/pypi/v/AutoFeatSelect)](https://pypi.org/project/AutoFeatSelect/)
+![License](https://img.shields.io/github/license/dorukcanga/AutoFeatSelect)
+
 `autofeatselect` is a python library that automates and accelerates feature selection processes for machine learning projects.
 
 It helps to calculate feature importance scores & rankings with several methods and also helps to detect and remove highly correlated variables.
