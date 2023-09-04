@@ -377,13 +377,14 @@ class FeatureSelector:
         """
         
         self.modeling_type = modeling_type
-        self.X_train = X_train
-        self.y_train = y_train
-        self.X_test = X_test
-        self.y_test = y_test
-        self.weight_train = weight_train
-        self.numeric_columns = numeric_columns
-        self.categorical_columns = categorical_columns
+        self.X_train = X_train.copy()
+        self.y_train = y_train.copy()
+
+        self.X_test = None if X_test is None else X_test.copy()
+        self.y_test = None if y_test is None else y_test.copy()
+        self.weight_train = None if weight_train is None else weight_train.copy()
+        self.numeric_columns = None if numeric_columns is None else numeric_columns.copy()
+        self.categorical_columns = None if categorical_columns is None else categorical_columns.copy()
         self.seed = seed
         
         #Data Type Correction for Training & Test Sets
