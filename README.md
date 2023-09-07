@@ -2,6 +2,7 @@
 
 [![PyPI](https://img.shields.io/pypi/v/AutoFeatSelect)](https://pypi.org/project/AutoFeatSelect/)
 ![License](https://img.shields.io/github/license/dorukcanga/AutoFeatSelect)
+[![Downloads](https://static.pepy.tech/badge/autofeatselect)](https://pepy.tech/project/autofeatselect)
 
 `autofeatselect` is a python library that automates and accelerates feature selection processes for machine learning projects.
 
