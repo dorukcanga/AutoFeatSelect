@@ -89,7 +89,7 @@ rfecv_importance_df = feat_selector.rfecv_importance(lgbm_hyperparams=lgbm_hyper
                                                      return_plot=False)
 ```
 
-* Calculating Single Feature Importance Score & Plot Results
+* Calculating Multiple Feature Importance Scores
 
 ```python
 #Automated correlation analysis & applying multiple feature selection methods
