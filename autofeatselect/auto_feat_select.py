@@ -169,7 +169,7 @@ class CorrelationCalculator:
         
         # Melt the DataFrame to convert it to long format
         corr_matrix = corr_matrix.reset_index()
-        melted_df = pd.melt(corr_matrix, id_vars='index', value_vars=corr_matrix.columns[1:], var_name='j')
+        melted_df = pd.melt(corr_matrix, id_vars=corr_matrix.columns.name, value_vars=corr_matrix.columns[1:], var_name='j')
         
         # Rename columns for clarity
         melted_df.columns = ['i', 'j', 'correlation_score']
